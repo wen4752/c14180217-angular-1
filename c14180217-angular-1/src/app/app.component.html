@@ -1,0 +1,11 @@
+ 
+ <h3>Giliran: Player {{giliran}}</h3>
+ <p>contoh input: 0,2</p>
+ <input type="text" [(ngModel)]="input">
+ <button (click)="cekmenang()">button</button>
+<br><br>
+<tr *ngFor="let isi of board; let i = index">
+  <td *ngFor="let cell of isi">
+    {{cell}}
+  </td>
+</tr>
